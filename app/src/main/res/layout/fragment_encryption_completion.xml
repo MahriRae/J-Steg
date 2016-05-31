@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/mdpi_blank_background"
+    tools:context="com.stegatective.abcd.j_steg.EncryptionCompletionFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/OriginalImageLBL"
+            android:text="Original Image:"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/originalImageView"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_below="@id/OriginalImageLBL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/EncryptedImageLBL"
+            android:text="Encrypted Image:"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/originalImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/encrtyptedImageView"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/EncryptedImageLBL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/eDoneBTN"
+            android:background="@drawable/done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_below="@id/encrtyptedImageView"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

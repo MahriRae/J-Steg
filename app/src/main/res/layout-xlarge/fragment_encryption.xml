@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/xhdpi_blank_background"
+    tools:context="com.stegatective.abcd.j_steg.EncryptionActivityFragment">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/selectedImageLabel"
+            android:text="Selected Image:"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_width="500dp"
+            android:layout_height="600dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/selectedImageLabel"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/messageLBL"
+            android:text="Enter Message:"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectedImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"/>
+
+        <EditText
+            android:id="@+id/userMessage"
+            android:ems="10"
+            android:textSize="25dp"
+            android:background="#ffffff"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/messageLBL"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/pinLBL"
+            android:text="Enter Pin(Optional):"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/userMessage" />
+
+        <EditText
+            android:id="@+id/setPinNumber"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLength="4"
+            android:hint="0000"
+            android:background="#ffffff"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/pinLBL"
+            android:layout_toRightOf="@+id/pinLBL" />
+
+        <Button
+            android:id="@+id/encryptBTN"
+            android:background="@drawable/encrypt_button"
+            android:layout_width="400dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/setPinNumber"/>
+
+        <Button
+            android:id="@+id/cancelBTN"
+            android:background="@drawable/cancel_button"
+            android:layout_width="400dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/encryptBTN"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>

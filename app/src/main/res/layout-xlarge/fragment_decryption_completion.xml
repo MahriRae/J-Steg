@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xhdpi_blank_background"
+    tools:context="com.stegatective.abcd.j_steg.DecryptionCompletionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ImageLabel"
+            android:text="Selected Image:"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/decryptedImage"
+            android:layout_width="500dp"
+            android:layout_height="600dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ImageLabel"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/decryptedMessageLBL"
+            android:text="Hidden Message:"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/decryptedImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/decryptedMessage"
+            android:textSize="25dp"
+            android:background="#ffffff"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/decryptedMessageLBL"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/dDoneBTN"
+            android:background="@drawable/done_button"
+            android:layout_width="400dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@id/decryptedMessage"/>
+    </RelativeLayout>
+</ScrollView>

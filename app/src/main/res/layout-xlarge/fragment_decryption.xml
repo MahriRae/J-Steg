@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xhdpi_blank_background"
+    tools:context="com.stegatective.abcd.j_steg.DecryptionActivityFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/selectedLBL"
+            android:text="Selected Image:"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/selectedEncryptedImage"
+            android:layout_width="500dp"
+            android:layout_height="600dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/selectedLBL"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/enterPin"
+            android:text="Enter Pin(Optional):"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/selectedEncryptedImage" />
+
+        <EditText
+            android:id="@+id/imagePinNumber"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLength="4"
+            android:hint="0000"
+            android:background="#ffffff"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/enterPin"
+            android:layout_toRightOf="@+id/enterPin" />
+
+        <Button
+            android:id="@+id/decryptBTN"
+            android:background="@drawable/decrypt_button"
+            android:layout_width="400dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/imagePinNumber"/>
+
+        <Button
+            android:id="@+id/cancelBTN"
+            android:background="@drawable/cancel_button"
+            android:layout_width="400dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/decryptBTN"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
