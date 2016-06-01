@@ -2,7 +2,7 @@
 
 Small group Android Project completed for Senior Capstone.
 
-Team ABCD Members: Joe Amadeo (@AppDude27), Mariah Burks(@MahrieRae), Javier Contreras(@Dizzylul), Daniel Doan(@Rexura)
+Team ABCD Members: Joe Amadeo (@AppDude27), Mariah Burks(@MahriRae), Javier Contreras(@Dizzylul), Daniel Doan(@Rexura)
 
 Our project will use steganography to encrypt text into an image. We intend to use Java and make this project into a mobile application for Android devices.
 
